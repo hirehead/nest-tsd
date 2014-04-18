@@ -8,6 +8,6 @@ declare module Nest {
 
         wait(): IPromise < any > ;
         wait(done ? : () => any);
-        go();
+        start();
     }
 }
