@@ -4,7 +4,7 @@ declare module Nest {
         $serviceInject ? : Array < string > ;
     }
 
-    interface IContainerRegistrator {
+    interface IBootstraperRegistrator {
         register(step: StepFunction);
     }
 }

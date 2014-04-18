@@ -2,7 +2,7 @@
 
 declare module Nest {
 
-    interface IBootstrap {
+    interface IBootstraper {
         register(step: (app: INest, next: () => void) => any);
         register(steps: Array < (app: INest, next: () => void) => any > );
 
