@@ -1,4 +1,5 @@
 declare module Nest{
+
 	interface IPromise < T > {
 	    then < U > (onFulfill: (value: T) => IPromise < U > , onReject ? : (reason: any) => IPromise < U > ): IPromise < U > ;
 	    then < U > (onFulfill: (value: T) => IPromise < U > , onReject ? : (reason: any) => U): IPromise < U > ;

@@ -5,6 +5,7 @@ declare module Nest {
         new(...args: Array < any > ): any;
         $serviceName ? : string;
         $serviceKey ? : string;
+        $serviceInject ? : Array < string > ;
         $serviceFactory ? : () => IPromise < any > ;
     }
 
