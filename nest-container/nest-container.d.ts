@@ -2,7 +2,7 @@
 
 declare module Nest {
     interface IContainer {
-        register(name: string, key: string, factory: () => IPromise < any > ): IContainer;
-        get < T > (service: string, key ? : string): IPromise < T > ;
+        define(name: string, key: string, module: () => IPromise < any > ): IContainer;
+        require < T > (name: string, key ? : string): IPromise < T > ;
     }
 }

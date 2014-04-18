@@ -3,11 +3,11 @@
 declare module Nest {
 
     interface IBootstrap {
-        register(step: (app : INest, next : () => void) => any);
-        register(steps: Array < (app : INest, next : () => void) => any > );
+        register(step: (app: INest, next: () => void) => any);
+        register(steps: Array < (app: INest, next: () => void) => any > );
 
-        start(): IPromise < any > ;
-        start(done ? : () => any);
-        continue ();
+        wait(): IPromise < any > ;
+        wait(done ? : () => any);
+        go();
     }
 }

@@ -1,7 +1,7 @@
 /// <reference path="../nest-async/nest-async.d.ts" />
 
 declare module Nest {
-    interface ServiceFunction {
+    interface ModuleFunction {
         new(...args: Array < any > ): any;
         $serviceName ? : string;
         $serviceKey ? : string;
@@ -10,6 +10,6 @@ declare module Nest {
     }
 
     interface IContainerRegistrator {
-        register(service: ServiceFunction): IContainerRegistrator;
+        register(module: ModuleFunction): IContainerRegistrator;
     }
 }
