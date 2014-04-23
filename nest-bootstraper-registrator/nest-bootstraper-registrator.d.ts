@@ -6,5 +6,6 @@ declare module Nest {
 
     interface IBootstraperRegistrator {
         register(step: StepFunction);
+        register(step: Array<StepFunction>);
     }
 }
