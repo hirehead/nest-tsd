@@ -7,7 +7,7 @@ declare module Nest {
      */
     interface IBootstraperLoader {
         register(json: Array<any> );
-        register(json: string);
+        register(json?: string );
     }
     /*
 nest: {
